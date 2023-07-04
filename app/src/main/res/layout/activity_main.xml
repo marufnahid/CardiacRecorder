@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#ffffff">
+    android:background="#0D2D8C"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/Icon"
@@ -39,9 +39,10 @@
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:fontFamily="cursive"
-        android:text="Your Ultimate Heart Assistant!"
+        android:text="Monitor | Conscious | Live Long"
         android:textAlignment="center"
-        android:textColor="@color/teal_700"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/LogInAction"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +72,7 @@
         android:layout_width="261dp"
         android:layout_height="58dp"
         android:fontFamily="monospace"
-        android:text="ABRAR | SHOUMYA"
+        android:text="MARUF | TANVIR"
         android:textAlignment="center"
         android:textColor="#ff6b6b"
         android:textSize="20sp"

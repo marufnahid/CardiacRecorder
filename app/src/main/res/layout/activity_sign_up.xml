@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/SignupActivity"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SignupActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpAct"
-    android:background="@drawable/sign1"
-    >
+    android:background="#0D2D8C"
+    tools:context=".SignUpAct">
 
 
     <ScrollView
@@ -40,7 +39,7 @@
                     android:text="SIGN UP"
                     android:textAlignment="center"
 
-                    android:textColor="#227e6e"
+                    android:textColor="#fff"
                     android:textSize="50sp" />
 
             </LinearLayout>
@@ -57,11 +56,14 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#fff"
                     android:padding="5dp"
+                    android:textColorHint="#fff"
                     app:boxCornerRadiusBottomEnd="20dp"
                     app:boxCornerRadiusBottomStart="20dp"
                     app:boxCornerRadiusTopEnd="20dp"
-                    app:boxCornerRadiusTopStart="20dp">
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:passwordToggleTint="#FFFFFF">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/name"
@@ -76,6 +78,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
+                    android:textColorHint="#fff"
                     app:boxCornerRadiusBottomEnd="20dp"
                     app:boxCornerRadiusBottomStart="20dp"
                     app:boxCornerRadiusTopEnd="20dp"
@@ -85,7 +88,9 @@
                         android:id="@+id/SignUpEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Email" />
+                        android:hint="Email"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff" />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -110,7 +115,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Password"
-                        android:inputType="textPassword" />
+                        android:inputType="textPassword"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -181,7 +188,7 @@
                 android:layout_centerHorizontal="true"
 
                 android:layout_marginTop="20dp"
-                android:backgroundTint="@android:color/background_dark"
+                android:backgroundTint="#0D2D8C"
                 android:text="Signup"
                 app:cornerRadius="50dp"
                 app:strokeColor="@color/white"

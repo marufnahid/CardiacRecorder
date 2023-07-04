@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    android:backgroundTint="#0D2D8C">
+
     <RelativeLayout
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_height="wrap_content">
+        android:backgroundTint="#0D2D8C">
 
         <RelativeLayout
             android:id="@+id/header"
@@ -34,6 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/header"
             android:orientation="vertical">
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/alert0"
 
@@ -42,6 +45,7 @@
 
                 android:layout_height="61dp"
                 app:counterEnabled="true">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/heartrate"
                     android:layout_width="match_parent"
@@ -88,10 +92,10 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/ImgDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_date_range_24"
-                    android:id="@+id/ImgDate"
 
                     />
 
@@ -107,60 +111,66 @@
 
 
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/alertll1"
-        android:id="@+id/alertll3">
-        <EditText
-            android:hint="DD"
-            android:id="@+id/date"
-            android:inputType="numberDecimal"
 
-            android:layout_width="60dp"
-            android:layout_height="50dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="/"
-
-
-            />
-        <EditText
-            android:hint="MM"
-            android:id="@+id/month"
-            android:layout_width="60dp"
-            android:inputType="numberDecimal"
-            android:layout_height="50dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:id="@+id/year"
-            android:text="/"
-
-            />
-        <EditText
-            android:hint="YYYY"
-            android:id="@+id/yearedit"
-            android:inputType="numberDecimal"
-            android:layout_width="100dp"
-            android:layout_height="50dp"/>
-
-
-
-    </LinearLayout>
         <LinearLayout
+            android:id="@+id/alertll3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/alertll1">
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+
+                android:hint="DD"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="30sp"
+
+
+                />
+
+            <EditText
+                android:id="@+id/month"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:hint="MM"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="30sp"
+
+                />
+
+            <EditText
+                android:id="@+id/yearedit"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:hint="YYYY"
+                android:inputType="numberDecimal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/AlertLL5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@id/alertll3">
 
             <ImageView
+                android:id="@+id/ImgClc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/ImgClc"
                 android:src="@drawable/ic_baseline_access_time_24" />
 
             <TextView
@@ -175,61 +185,64 @@
         </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/alertll4"
-        android:layout_below="@id/AlertLL5"
-        android:orientation="horizontal">
-
-        <EditText
-
-            android:hint="HH"
-            android:id="@+id/hour"
-            android:inputType="numberDecimal"
-            android:layout_width="60dp"
-            android:layout_height="50dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/alertll4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:text=":"
+            android:layout_below="@id/AlertLL5"
+            android:orientation="horizontal">
 
-            android:textSize="30sp"
+            <EditText
 
-            />
-        <EditText
-            android:hint="MM"
-            android:id="@+id/minute"
-            android:inputType="numberDecimal"
-            android:layout_width="60dp"
-            android:layout_height="50dp"/>
-        <TextView
+                android:id="@+id/hour"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:hint="HH"
+                android:inputType="numberDecimal" />
 
-            android:layout_width="wrap_content"
-            android:id="@+id/AP"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text=":"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text=":"
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="60dp"
+                android:textSize="30sp"
 
-            android:layout_height="40dp"
-            android:spinnerMode="dropdown"
+                />
 
-            android:layout_weight="1" />
+            <EditText
+                android:id="@+id/minute"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:hint="MM"
+                android:inputType="numberDecimal" />
+
+            <TextView
+
+                android:id="@+id/AP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="60dp"
+
+                android:layout_height="40dp"
+                android:layout_weight="1"
+
+                android:spinnerMode="dropdown" />
 
 
-    </LinearLayout>
+        </LinearLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/CommentL"
-            android:layout_below="@id/alertll4"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="61dp"
+            android:layout_below="@id/alertll4"
 
             app:counterEnabled="true">
 
@@ -244,8 +257,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_below="@id/CommentL">
+            android:layout_below="@id/CommentL"
+            android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -286,14 +299,9 @@
             </RelativeLayout>
 
 
-
-
         </LinearLayout>
 
     </RelativeLayout>
-
-
-
 
 
 </ScrollView>

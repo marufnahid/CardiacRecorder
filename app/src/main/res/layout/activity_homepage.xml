@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/homepage"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
+    android:background="#0D2D8C"
     tools:context=".homepage">
 
     <RelativeLayout
@@ -17,28 +17,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
             android:text="Last Measured"
             android:textColor="#FBCEE2"
-            android:textStyle="bold"
             android:textSize="30sp"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="20dp"/>
+            android:textStyle="bold" />
 
         <GridLayout
+            android:id="@+id/gridLayOut"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/gridLayOut"
             android:layout_below="@+id/textView4"
-            android:rowCount="2"
-            android:columnCount="2"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp">
+            android:layout_marginRight="30dp"
+            android:columnCount="2"
+            android:rowCount="2">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CardView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
-                android:id="@+id/CardView"
                 android:layout_rowWeight="1"
                 android:layout_column="0"
                 android:layout_columnWeight="1"
@@ -51,21 +51,21 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/TxtSystole"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
                         android:layout_marginTop="70dp"
                         android:text="80"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textSize="20sp"
-                        android:id="@+id/TxtSystole"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.247"
@@ -97,10 +97,10 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CardView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
-                android:id="@+id/CardView2"
                 android:layout_rowWeight="1"
                 android:layout_column="1"
                 android:layout_columnWeight="1"
@@ -113,19 +113,18 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/TxtDayastole"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="120"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
-                        android:textSize="20sp"
-                        />
+                        android:text="120"
+                        android:textSize="20sp" />
 
                     <ProgressBar
                         android:id="@+id/ProgressDiastole"
@@ -145,13 +144,12 @@
                         android:layout_below="@+id/ProgressDiastole"
                         android:layout_centerHorizontal="true"
                         android:text="Diastolic"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="1"
@@ -160,6 +158,7 @@
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="8dp"
+                android:visibility="gone"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
@@ -167,9 +166,9 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/BMIText"
@@ -191,7 +190,6 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="1"
@@ -200,6 +198,7 @@
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="8dp"
+                android:visibility="gone"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
@@ -207,17 +206,16 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical|center_horizontal">
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tt1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Health Status"
-                        android:textSize="20sp"
-                        />
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/textView5"
@@ -232,10 +230,10 @@
         </GridLayout>
 
         <LinearLayout
-            android:layout_marginTop="100dp"
-            android:layout_below="@id/gridLayOut"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gridLayOut"
+            android:layout_marginTop="100dp">
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -247,32 +245,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:text="ADD NEW"
-                    android:textColor="@color/black"
+                    android:layout_marginBottom="50dp"
                     android:backgroundTint="@color/white"
+                    android:text="ADD NEW"
 
-                    app:cornerRadius="50dp"
-                    android:layout_marginBottom="50dp"/>
+                    android:textColor="@color/black"
+                    app:cornerRadius="50dp" />
 
             </RelativeLayout>
 
             <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
 
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/white"
                     android:text="Statistics"
                     android:textColor="@color/black"
-                    android:backgroundTint="@color/white"
                     app:cornerRadius="50dp" />
 
             </RelativeLayout>
-
 
 
         </LinearLayout>
@@ -280,235 +277,235 @@
 
 
     <!--    <RelativeLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        >-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        >-->
 
 
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:id="@+id/cardView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="279dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.051"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        android:layout_gravity="fill"-->
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/cardView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="279dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.051"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:layout_gravity="fill"-->
 
-<!--        app:layout_constraintVertical_bias="0.109">-->
+    <!--        app:layout_constraintVertical_bias="0.109">-->
 
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent">-->
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView4"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Last Measured"-->
-<!--                android:textSize="20sp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.05"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintVertical_bias="0.016" />-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView4"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Last Measured"-->
+    <!--                android:textSize="20sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.05"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintVertical_bias="0.016" />-->
 
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="70dp"-->
-<!--                android:text="80"-->
-<!--                android:textAlignment="center"-->
-<!--                android:textSize="20sp"-->
-<!--                android:id="@+id/TxtSystole"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.247"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintVertical_bias="0.307" />-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="70dp"-->
+    <!--                android:text="80"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="20sp"-->
+    <!--                android:id="@+id/TxtSystole"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.247"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintVertical_bias="0.307" />-->
 
-<!--            <ProgressBar-->
-<!--                android:id="@+id/ProgressSystole"-->
-<!--                android:layout_width="131dp"-->
-<!--                android:layout_height="144dp"-->
-<!--                android:progress="150"-->
-<!--                android:max="150"-->
+    <!--            <ProgressBar-->
+    <!--                android:id="@+id/ProgressSystole"-->
+    <!--                android:layout_width="131dp"-->
+    <!--                android:layout_height="144dp"-->
+    <!--                android:progress="150"-->
+    <!--                android:max="150"-->
 
-<!--                android:progressDrawable="@drawable/shape_circle_progress"-->
-<!--                android:background="@drawable/shape_circle_bg"-->
-<!--                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
-<!--                android:layout_marginHorizontal="40dp"-->
-<!--                android:layout_marginVertical="70dp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.0"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintVertical_bias="0.496" />-->
+    <!--                android:progressDrawable="@drawable/shape_circle_progress"-->
+    <!--                android:background="@drawable/shape_circle_bg"-->
+    <!--                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+    <!--                android:layout_marginHorizontal="40dp"-->
+    <!--                android:layout_marginVertical="70dp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.0"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintVertical_bias="0.496" />-->
 
-<!--            <ProgressBar-->
-<!--                android:id="@+id/ProgressDiastole"-->
-<!--                android:layout_width="131dp"-->
-<!--                android:layout_height="144dp"-->
-<!--                android:progress="120"-->
-<!--                android:max="200"-->
-<!--                android:progressDrawable="@drawable/shape_circle_progress"-->
-<!--                android:background="@drawable/shape_circle_bg"-->
-<!--                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
-<!--                android:layout_marginHorizontal="40dp"-->
-<!--                android:layout_marginVertical="70dp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.942"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintVertical_bias="0.496" />-->
+    <!--            <ProgressBar-->
+    <!--                android:id="@+id/ProgressDiastole"-->
+    <!--                android:layout_width="131dp"-->
+    <!--                android:layout_height="144dp"-->
+    <!--                android:progress="120"-->
+    <!--                android:max="200"-->
+    <!--                android:progressDrawable="@drawable/shape_circle_progress"-->
+    <!--                android:background="@drawable/shape_circle_bg"-->
+    <!--                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+    <!--                android:layout_marginHorizontal="40dp"-->
+    <!--                android:layout_marginVertical="70dp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.942"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintVertical_bias="0.496" />-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView6"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Systolic"-->
-<!--                android:textSize="20sp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.226"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/ProgressSystole"-->
-<!--                app:layout_constraintVertical_bias="0.437" />-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView6"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Systolic"-->
+    <!--                android:textSize="20sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.226"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toBottomOf="@+id/ProgressSystole"-->
+    <!--                app:layout_constraintVertical_bias="0.437" />-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView7"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Diastolic"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.6"-->
-<!--                app:layout_constraintStart_toEndOf="@+id/textView6"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/ProgressDiastole"-->
-<!--                app:layout_constraintVertical_bias="0.437"-->
-<!--                android:textSize="20sp"/>-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView7"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Diastolic"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.6"-->
+    <!--                app:layout_constraintStart_toEndOf="@+id/textView6"-->
+    <!--                app:layout_constraintTop_toBottomOf="@+id/ProgressDiastole"-->
+    <!--                app:layout_constraintVertical_bias="0.437"-->
+    <!--                android:textSize="20sp"/>-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/TxtDayastole"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="120"-->
-<!--                android:textSize="20sp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.731"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent" />-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/TxtDayastole"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="120"-->
+    <!--                android:textSize="20sp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.731"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-
-<!--    </androidx.cardview.widget.CardView>-->
-
-<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
-<!--            android:id="@+id/ll3"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@id/cardView"-->
-<!--            android:layout_marginTop="50dp"-->
-<!--            android:orientation="horizontal">-->
-
-<!--            <androidx.cardview.widget.CardView-->
-
-<!--                android:id="@+id/cardView3"-->
-
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="116dp"-->
-
-<!--                android:layout_weight="1">-->
-
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent">-->
-
-<!--                    <TextView-->
-<!--                        android:id="@+id/BMIText"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="BMI"-->
-<!--                        android:textSize="20sp" />-->
-
-<!--                    <TextView-->
-<!--                        android:id="@+id/BMINumber"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_centerHorizontal="true"-->
-<!--                        android:layout_centerVertical="true"-->
-<!--                        android:text="24"-->
-<!--                        android:textSize="30sp" />-->
-
-<!--                </RelativeLayout>-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
-<!--            </androidx.cardview.widget.CardView>-->
+    <!--    </androidx.cardview.widget.CardView>-->
 
-<!--            <androidx.cardview.widget.CardView-->
-<!--                android:id="@+id/cardView2"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="116dp"-->
+    <!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+    <!--            android:id="@+id/ll3"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/cardView"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:orientation="horizontal">-->
 
-<!--                android:layout_weight="1">-->
+    <!--            <androidx.cardview.widget.CardView-->
 
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent">-->
+    <!--                android:id="@+id/cardView3"-->
 
-<!--                    <TextView-->
-<!--                        android:id="@+id/tt1"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Health Status"-->
-<!--                        android:textSize="20sp"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="116dp"-->
 
-<!--                        />-->
+    <!--                android:layout_weight="1">-->
 
-<!--                    <TextView-->
-<!--                        android:id="@+id/textView5"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_centerInParent="true"-->
-<!--                        android:text="Healthy"-->
-<!--                        android:textSize="30sp" />-->
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent">-->
 
-<!--                </RelativeLayout>-->
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/BMIText"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="BMI"-->
+    <!--                        android:textSize="20sp" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/BMINumber"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:layout_centerVertical="true"-->
+    <!--                        android:text="24"-->
+    <!--                        android:textSize="30sp" />-->
+
+    <!--                </RelativeLayout>-->
 
 
-<!--            </androidx.cardview.widget.CardView>-->
+    <!--            </androidx.cardview.widget.CardView>-->
 
-<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:id="@+id/cardView2"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="116dp"-->
+
+    <!--                android:layout_weight="1">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent">-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/tt1"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Health Status"-->
+    <!--                        android:textSize="20sp"-->
+
+    <!--                        />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/textView5"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerInParent="true"-->
+    <!--                        android:text="Healthy"-->
+    <!--                        android:textSize="30sp" />-->
+
+    <!--                </RelativeLayout>-->
 
 
-<!--    <LinearLayout-->
-<!--        android:layout_marginTop="100dp"-->
-<!--        android:layout_below="@id/ll3"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
+    <!--            </androidx.cardview.widget.CardView>-->
 
-<!--        <Button-->
-<!--            android:id="@+id/add_new"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="30dp"-->
-<!--            android:text="ADD NEW"-->
-<!--            app:cornerRadius="50dp" />-->
+    <!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
 
-<!--        <Button-->
-<!--            android:id="@+id/button3"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="70dp"-->
-<!--            android:text="Statistics"-->
-<!--            app:cornerRadius="50dp" />-->
-<!--    </LinearLayout>-->
-<!--    </RelativeLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        android:layout_below="@id/ll3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/add_new"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="30dp"-->
+    <!--            android:text="ADD NEW"-->
+    <!--            app:cornerRadius="50dp" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/button3"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="70dp"-->
+    <!--            android:text="Statistics"-->
+    <!--            app:cornerRadius="50dp" />-->
+    <!--    </LinearLayout>-->
+    <!--    </RelativeLayout>-->
 </ScrollView>
