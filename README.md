@@ -1,11 +1,12 @@
 # CardiacRecorder
 
-* CardiacRecorder is a simple, useful and user-friendly android application to monitor a person's heart rate, BMI and blood pressure.
+* CardiacRecorder is an Android app designed to assist users in monitoring their blood pressure levels. With the ability to record systolic and diastolic rates, the app enables users to track and maintain a comprehensive log of their blood pressure measurements over time.
 
-As people becoming more and more health conscious, keeping track of one's heart rate, BMI and blood pressure at different times becoming a very wanted activity of every day life. Our app 'CardiacRecoder' intends to help people in this regard.
+Using CardiacRecorder is intuitive and user-friendly. Users can effortlessly input their systolic and diastolic readings, and the app will store and organize the data securely. This functionality allows for easy tracking of blood pressure trends, helping individuals gain insights into their cardiovascular health.
 
-'CardiacRecorder' has a very intuitive UI, lots of features and a convinient experience to offer to its users. It has the ultimate capabilities to become a person's ultimate heart assistant!
+CardiacRecorder goes beyond just recording blood pressure measurements. The app also provides valuable statistics and analysis based on the collected data. Users can view graphical representations of their blood pressure trends, enabling them to visualize changes and patterns over time. This information empowers users to make informed decisions about their health and enables them to take proactive steps in managing their blood pressure.
 
+The app emphasizes the importance of maintaining a healthy lifestyle by promoting regular monitoring and providing reminders for blood pressure measurements. By offering an accessible and convenient way to record and analyze blood pressure data, CardiacRecorder encourages users to prioritize their cardiovascular health and take proactive measures to maintain a balanced and optimal blood pressure level.
 * Below are some screenshots of the app:
 
 <table>
