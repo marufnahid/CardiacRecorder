@@ -33,4 +33,4 @@ The app emphasizes the importance of maintaining a healthy lifestyle by promotin
 </table>
 
 
-* More details about this android application project can be found <a href="https://github.com/abrarhasan3/CardiacRecorder/wiki">here</a>
+* More details about this android application project can be found <a href="https://github.com/marufnahid/CardiacRecorder/wiki">here</a>
